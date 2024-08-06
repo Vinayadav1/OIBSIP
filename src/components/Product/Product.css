@@ -1,0 +1,46 @@
+/* src/components/Product/Product.css */
+.product-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  padding: 1rem;
+  width: 250px;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.product-name {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.product-description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.order-button {
+  background-color: #ff6347;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.order-button:hover {
+  background-color: #e5533d;
+}
