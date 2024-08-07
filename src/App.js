@@ -1,27 +1,28 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
-import About from "./components/About/About";
-import Products from "./components/Products/Products";
-import Testimonials from "./components/Testimonials/Testimonials";
-import Location from "./components/Location/Location";
-import Banner from "./components/Banner/Banner";
 import Footer from "./components/Footer/Footer";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import CustomPizza from "./pages/CustomPizza/CustomPizza";
 import "./styles.css";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Header />
-      <About />
-      <Products />
-      <Testimonials />
-      <Banner />
-      <Location />
-      <Footer />
-      {/* Add other components like Header, Footer, Products, etc. here */}
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/custom-pizza" element={<CustomPizza />} />
+          {/* Add other routes as needed */}
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
