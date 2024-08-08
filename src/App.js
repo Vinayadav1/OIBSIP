@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import CustomPizza from "./pages/CustomPizza/CustomPizza";
+import ContactPage from './pages/ContactPage/ContactPage';
 import "./styles.css";
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/custom-pizza" element={<CustomPizza />} />
+          <Route path="/contact" component={ContactPage} />
+
           {/* Add other routes as needed */}
         </Routes>
         <Footer />
